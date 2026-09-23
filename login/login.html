@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./login.css">
+    <script type="module" src="./login.js" defer></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="usuario">Usuário *</label>
+            <input id="usuario" type="email" placeholder="Digite seu email" required>
+            <label for="senha">Senha *</label>
+            <input id="senha" type="password" placeholder="Digite sua senha" required>
+            <div class="mostrar-senha">
+                <input id="mostrarSenha" type="checkbox">
+                <label for="mostrarSenha">Mostrar Senha</label>
+            </div>
+            <button type="button" id="btnEntrar" disabled>Entrar</button>
+            <a href="#" id="recuperarSenha">Esqueci minha senha</a>
+        </fieldset>
+    </form>
+</body>
+</html>
