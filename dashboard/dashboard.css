@@ -1,0 +1,41 @@
+.conteudo {
+    padding: 30px;
+}
+
+.conteudo h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-curso {
+    padding: 20px;
+
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-curso h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #6c63ff;
+}
+
+.card-curso p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.mensagem-sem-cursos {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}

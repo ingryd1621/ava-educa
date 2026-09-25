@@ -4,33 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <script src="./dashboard.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./dashboard.css">
 </head>
 <body>
     <header class="cabecalho">
         <h1>AVA-EDUCA+</h1>
-        <span id="usuarioLogado"></span>
+        <span id="usuarioLogado">Usuário logado</span>
     </header>
     <div class="layout">
         <aside class="menu-lateral">
             <nav>
                 <a href="./dashboard.html">Dashboard</a>
-                <a href="#">Cursos</a>
+                <span class="link-desabilitado">Cursos</span>
                 <a href="../cadastro-aluno/cadastro-aluno.html">Cadastro de Alunos</a>
                 <a href="#" id="btnSair">Sair</a>
             </nav>
         </aside>
         <main class="conteudo">
             <h2>Dashboard</h2>
-            <section class="cards" id="cardsCursos">
-                <article class="card-curso">
-                    <h3>Nome do Curso</h3>
-                    <p>Data de início: 00/00/0000</p>
-                    <p>Data de fim: 00/00/0000</p>
-                </article>
-            </section>
+            <section class="cards" id="cardsCursos"></section>
         </main>
     </div>
+    <script type="module" src="./dashboard.js" defer></script>
 </body>
 </html>
