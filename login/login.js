@@ -30,11 +30,12 @@ recuperarSenha.addEventListener("click", function () {
 import { login } from "../js/auth.js";
 
 btnEntrar.addEventListener("click", function(){
-    const usuarioEncontrado = login(usuario.value, senha.value);
-    if (usuarioEncontrado){
-        sessionStorage.setItem('usuario', JSON.stringify(usuarioEncontrado));
-        window.location.href = "../dashboard/dashboard.html";
-    } else {
-        window.alert("Usuário ou senha inválidos!");
-    }
-})
+    login(usuario.value, senha.value)
+        .then((usuarioEncontrado) => {
+            sessionStorage.setItem('usuario', JSON.stringify(usuarioEncontrado));
+            window.location.href = "../dashboard/dashboard.html";
+        })
+        .catch((erro) => {
+            window.alert(erro);
+        });
+});
