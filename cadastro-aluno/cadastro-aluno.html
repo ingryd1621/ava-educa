@@ -7,6 +7,7 @@
     <title>Cadastro de Alunos</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./cadastro-aluno.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.31.0/moment.min.js" defer></script>
     <script type="module" src="./cadastro-aluno.js" defer></script>
 </head>
 
@@ -64,7 +65,7 @@
                         <legend>Endereço</legend>
                         <div class="campo">
                             <label for="cep">CEP *</label>
-                            <input id="cep" type="number" required>
+                            <input id="cep" type="number" minlength="8" maxlength="8" required>
                         </div>
                         <div class="campo">
                             <label for="logradouro">Logradouro *</label>
