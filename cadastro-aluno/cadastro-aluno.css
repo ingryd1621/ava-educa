@@ -87,21 +87,25 @@ legend {
     background-color: #554fc7;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
 
     .conteudo {
         padding: 20px;
     }
-
     form {
         padding: 20px;
+        width: 100%;
     }
-
     fieldset {
         grid-template-columns: 1fr;
     }
-
     #btnSalvar {
         width: 100%;
+    }
+    .campo label {
+        font-size: 13px;
+    }
+    .campo input, .campo select {
+        font-size: 14px;
     }
 }

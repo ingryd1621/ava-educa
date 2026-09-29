@@ -59,15 +59,33 @@ body {
     cursor: not-allowed;
 }
 
-@media (max-width: 767px) {
-
+@media screen and (max-width: 767px) {
     .layout {
         grid-template-columns: 1fr;
     }
-
     .menu-lateral {
         border-right: none;
         border-bottom: 1px solid #eee;
     }
-
+    .menu-lateral nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cabecalho {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 15px 20px;
+        gap: 8px;
+    }
+    .cabecalho h1 {
+        font-size: 22px;
+    }
+    #usuarioLogado {
+        font-size: 14px;
+    }
+    .menu-lateral a, .link-desabilitado {
+        font-size: 14px;
+    }
 }
