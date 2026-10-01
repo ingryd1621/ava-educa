@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./dashboard.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>AVA-EDUCA+</h1>
+        <span id="usuarioLogado">Usuário logado</span>
+    </header>
+    <div class="layout">
+        <aside class="menu-lateral">
+            <nav>
+                <a href="./dashboard.html">Dashboard</a>
+                <span class="link-desabilitado">Cursos</span>
+                <a href="../cadastro-aluno/cadastro-aluno.html">Cadastro de Alunos</a>
+                <a href="#" id="btnSair">Sair</a>
+            </nav>
+        </aside>
+        <main class="conteudo">
+            <h2>Dashboard</h2>
+            <section class="cards" id="cardsCursos"></section>
+        </main>
+    </div>
+    <script type="module" src="./dashboard.js" defer></script>
+</body>
+</html>
